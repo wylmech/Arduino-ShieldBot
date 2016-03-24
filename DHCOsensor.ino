@@ -6,10 +6,6 @@ int count = 0;//countを定義
 float Vs1 = 0;//センサの印加時の値
 float Vs2 = 0;
 float Vs3 = 0;
-float As1 = 0;
-float As2 = 0;
-float As3 = 0;
-
       
 void setup() {
   Serial.begin(9600);//シリアル通信開始
@@ -58,9 +54,6 @@ void DHCO(){
   Serial.print("Vs3;    ");
   Serial.println(Vs3/10,2);
   delay(100);                           //100msec待機
-  As1 = Vs1;
-  As2 = Vs2;
-  As3 = Vs3;
   i = 0;
   Vs1 = 0;
   Vs2 = 0;
